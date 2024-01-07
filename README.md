@@ -3,11 +3,12 @@ AI Model for ROS 2.
 
 ## Env Setup
 ### Requestments
-- ROS 2
-- CUDA & cuDNN
-- torch
-- transformers
-- accelerate
+- ROS 2 Humble
+- NVIDIA Driver 535.129.03
+- CUDA 12.2
+- torch==2.1.2
+- transformers==4.37.0.dev0
+- accelerate==0.25.0
 
 ### Easy setup
 ```bash
