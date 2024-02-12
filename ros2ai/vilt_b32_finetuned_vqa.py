@@ -24,8 +24,8 @@ import cv_bridge
 class ros2aiNode(Node):
 
     def __init__(self):
-        self.processor = ViltProcessor.from_pretrained("dandelin/vilt-b32-finetuned-vqa")
-        self.model = ViltForQuestionAnswering.from_pretrained("dandelin/vilt-b32-finetuned-vqa").to("cuda")
+        self.processor = ViltProcessor.from_pretrained("dandelin/vilt-b32-finetuned-vqa",cache_dir="/workspace/cache")
+        self.model = ViltForQuestionAnswering.from_pretrained("dandelin/vilt-b32-finetuned-vqa",cache_dir="/workspace/cache").to("cuda")
 
         super().__init__('vilt_b32_finetuned_vqa')
         self.subscription = self.create_subscription(
