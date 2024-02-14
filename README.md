@@ -94,3 +94,8 @@ ros2 run ros2ai owlvit_base_patch16
 ros2 run ros2ai owlvit_base_patch32
 ```
 </details>
+
+
+
+
+python3 src/ros2ai/ros2ai/vilt_b32_finetuned_vqa.py --subscription /blue/camera/image_raw
